@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="YXMessageShow">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cycle_back" translatesAutoresizingMaskIntoConstraints="NO" id="rUQ-Rc-ZpO">
+                    <rect key="frame" x="66" y="66" width="168" height="168"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="168" id="4oX-vu-xEn"/>
+                        <constraint firstAttribute="width" constant="168" id="Ogo-fm-joi"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nuj-ph-EoO">
+                    <rect key="frame" x="90" y="140" width="120" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="oXq-88-yzx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这是我的动画效果" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mV3-FH-gGq">
+                    <rect key="frame" x="84.5" y="110.5" width="131" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="棒棒哒，继续努力" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dyg-eu-VUD">
+                    <rect key="frame" x="93.5" y="171" width="114.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TXR-2D-UAm">
+                    <rect key="frame" x="252" y="0.0" width="48" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="BFD-ye-hMA"/>
+                        <constraint firstAttribute="width" constant="48" id="SbC-T6-yQZ"/>
+                    </constraints>
+                    <state key="normal" image="ico_close"/>
+                    <connections>
+                        <action selector="closeAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="qWF-FM-uWA"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uwb-2o-ZaX">
+                    <rect key="frame" x="90" y="220" width="120" height="30"/>
+                    <color key="backgroundColor" red="0.94901960780000005" green="0.7725490196" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="5gg-PI-XoA"/>
+                        <constraint firstAttribute="width" constant="120" id="Bce-0u-LBy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="点击查看详情"/>
+                    <connections>
+                        <action selector="clickAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="nfe-tG-rZx"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="nuj-ph-EoO" firstAttribute="top" secondItem="mV3-FH-gGq" secondAttribute="bottom" constant="10" id="BUr-0T-O7x"/>
+                <constraint firstItem="dyg-eu-VUD" firstAttribute="top" secondItem="nuj-ph-EoO" secondAttribute="bottom" constant="10" id="CUx-bW-gWg"/>
+                <constraint firstItem="rUQ-Rc-ZpO" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="FzJ-P7-Yjc"/>
+                <constraint firstItem="nuj-ph-EoO" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="GN7-6I-qfb"/>
+                <constraint firstItem="Uwb-2o-ZaX" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Kwq-Pf-Ti4"/>
+                <constraint firstItem="rUQ-Rc-ZpO" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="M31-d7-3MS"/>
+                <constraint firstItem="dyg-eu-VUD" firstAttribute="centerX" secondItem="nuj-ph-EoO" secondAttribute="centerX" id="ODw-Uq-oDH"/>
+                <constraint firstItem="nuj-ph-EoO" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="PJl-5L-xJe"/>
+                <constraint firstItem="TXR-2D-UAm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Sji-QC-5jM"/>
+                <constraint firstItem="mV3-FH-gGq" firstAttribute="centerX" secondItem="nuj-ph-EoO" secondAttribute="centerX" id="cCr-zc-dpC"/>
+                <constraint firstAttribute="trailing" secondItem="TXR-2D-UAm" secondAttribute="trailing" id="eDF-9Z-8wi"/>
+                <constraint firstItem="nuj-ph-EoO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="140" id="tMB-YN-tur"/>
+                <constraint firstItem="Uwb-2o-ZaX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="70" id="yPQ-gH-e05"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="mBottomLabel" destination="dyg-eu-VUD" id="6Az-WB-4o2"/>
+                <outlet property="mButton" destination="Uwb-2o-ZaX" id="jkL-qx-wOC"/>
+                <outlet property="mCloseBtn" destination="TXR-2D-UAm" id="LD9-l2-pNQ"/>
+                <outlet property="mTopLabel" destination="mV3-FH-gGq" id="s8i-BP-c3q"/>
+                <outlet property="messageImg" destination="rUQ-Rc-ZpO" id="N7t-UR-WFh"/>
+                <outlet property="messageLabel" destination="nuj-ph-EoO" id="3Hv-rw-GiU"/>
+            </connections>
+            <point key="canvasLocation" x="37" y="52"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cycle_back" width="16" height="16"/>
+        <image name="ico_close" width="16" height="16"/>
+    </resources>
+</document>
